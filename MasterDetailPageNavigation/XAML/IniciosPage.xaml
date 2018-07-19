@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MasterDetailPageNavigation.IniciosPage"
+             Title="AutoMecanix" Padding = "0,0,0,0">
+
+
+    <Grid BackgroundColor = "White" Padding = "20" RowSpacing = "0" ColumnSpacing = "0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "100"></RowDefinition>
+            <RowDefinition Height = "100"></RowDefinition>
+            <RowDefinition Height = "100"></RowDefinition>
+            <RowDefinition Height = "100"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Image  x:Name="image" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="0" Grid.ColumnSpan = "4" > </Image>        
+        <Image x:Name="imageActivar" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="1" Grid.ColumnSpan =  "4" > </Image> 
+        <Image x:Name="imageAt3Tire" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="2" Grid.Column =  "0" > </Image>  
+        <Image x:Name="imageAt3WTire" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="2" Grid.Column =  "1" > </Image>  
+        <Image x:Name="imageBktTireTire" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="2" Grid.Column =  "2" > </Image>  
+        <Image x:Name="imageAceite" Aspect = "AspectFill" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Grid.Row ="2" Grid.Column =  "3" > </Image> 
+        <Label Text="RBKT MP567" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row ="3" Grid.Column =  "0" />
+        <Label Text="Dunlop Grandtrek AT3" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row ="3" Grid.Column =  "1" />
+        <Label Text="Falken Wildpeak AT3W" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row ="3" Grid.Column =  "2" />
+        <Label Text="Aceite de motor sintético 10W30" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row ="3" Grid.Column =  "3" />
+    </Grid>
+
+   
+
+</ContentPage>

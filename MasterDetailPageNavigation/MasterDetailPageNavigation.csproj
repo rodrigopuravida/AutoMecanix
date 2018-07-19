@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AutoMecanixLogo.png" />
+    <EmbeddedResource Include="Resources\Activar.png" />
+    <EmbeddedResource Include="Resources\Aceite10w30.jpg" />
+    <EmbeddedResource Include="Resources\AT3.jpg" />
+    <EmbeddedResource Include="Resources\AT3W.png" />
+    <EmbeddedResource Include="Resources\BKTMP567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="XAML\ContactsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XAML\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XAML\MasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XAML\ReminderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XAML\TodoListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="XAML\Inicio.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\AutoMecanixLogo.png" />
+    <None Remove="Resources\Activar.png" />
+    <None Remove="Resources\Aceite10w30.jpg" />
+    <None Remove="Resources\AT3.jpg" />
+    <None Remove="Resources\AT3W.png" />
+    <None Remove="Resources\BKTMP567.jpg" />
+  </ItemGroup>
+</Project>
